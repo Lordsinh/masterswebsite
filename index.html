@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>GeoChronos | Your neighborhood friendly geologist</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top App / Web Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <i class="fa-solid fa-gem"></i>
+        <span>GeoChronos</span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link active-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav__item"><a href="#disciplines" class="nav__link"><i class="fa-solid fa-compass-drafting"></i> Disciplines</a></li>
+          <li class="nav__item"><a href="#msc-section" class="nav__link"><i class="fa-solid fa-microscope"></i> M.Sc. Modules</a></li>
+          <li class="nav__item"><a href="#bsc-section" class="nav__link"><i class="fa-solid fa-graduation-cap"></i> B.Sc. Portal</a></li>
+          <li class="nav__item"><a href="#repository" class="nav__link"><i class="fa-brands fa-google-drive"></i> Repository</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon theme-icon" id="theme-icon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <div class="badge-pill">
+            <i class="fa-solid fa-compass"></i> Your neighborhood friendly geologist
+          </div>
+          <h1 class="hero__title">
+            Explore Earth's Secrets <span class="text-accent">Layer by Layer.</span>
+          </h1>
+          <p class="hero__description">
+            Welcome to my curated geology resource portal. Access comprehensive postgraduate lecture notes, practical laboratory datasets, thin-section atlases, and direct Google Drive folders.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#msc-section" class="btn btn--primary">
+              <i class="fa-solid fa-book-open"></i> Browse M.Sc. Modules
+            </a>
+            <button class="btn btn--practical open-modal-btn"
+              data-title="Master Practical Manuals Hub"
+              data-drive-embed="https://drive.google.com/embeddedfolderview?id=YOUR_ALL_PRACTICALS_FOLDER_ID#grid"
+              data-drive-direct="https://drive.google.com/drive/folders/YOUR_ALL_PRACTICALS_FOLDER_ID?usp=sharing">
+              <i class="fa-solid fa-microscope"></i> Master Practical Drive
+            </button>
+          </div>
+
+          <!-- Quick Live Filter -->
+          <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input 
+              type="text" 
+              id="course-search" 
+              placeholder="Search topics (e.g. Igneous, Remote Sensing, Geochemistry, Faults)..." 
+            />
+          </div>
+        </div>
+
+        <!-- Academic Quick Stats Banner -->
+        <div class="stats-card">
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">M.Sc. Semesters</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Core Courses</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Cloud Accessible</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Geological Disciplines -->
+    <section class="disciplines section" id="disciplines">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__badge">Academic Scope</span>
+          <h2 class="section__title">Core Geological Disciplines</h2>
+          <p class="section__subtitle">Fundamental and applied pillars supporting geology studies and research</p>
+        </div>
+
+        <div class="disciplines__grid">
+          <div class="discipline-card">
+            <div class="discipline-card__icon"><i class="fa-solid fa-gem"></i></div>
+            <h3 class="card-title-head">Mineralogy & Crystallography</h3>
+            <div class="card-body-content">
+              <p>Crystal systems, symmetry classes, refractive indices, pleochroism, and optical thin-section microscopy.</p>
+            </div>
+          </div>
+
+          <div class="discipline-card">
+            <div class="discipline-card__icon"><i class="fa-solid fa-mountain-sun"></i></div>
+            <h3 class="card-title-head">Petrology & Geochemistry</h3>
+            <div class="card-body-content">
+              <p>Igneous textures, metamorphic facies, sedimentary basin dynamics, and isotopic geochronology.</p>
+            </div>
+          </div>
+
+          <div class="discipline-card">
+            <div class="discipline-card__icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3 class="card-title-head">Stratigraphy & Paleontology</h3>
+            <div class="card-body-content">
+              <p>Chronostratigraphic correlations, biostratigraphy, microfossils, evolutionary trends, and mass extinctions.</p>
+            </div>
+          </div>
+
+          <div class="discipline-card">
+            <div class="discipline-card__icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3 class="card-title-head">Structural Geology & Tectonics</h3>
+            <div class="card-body-content">
+              <p>Stress-strain mechanics, shear zones, fold kinematics, plate boundary dynamics, and stereonet projections.</p>
+            </div>
+          </div>
+
+          <div class="discipline-card">
+            <div class="discipline-card__icon"><i class="fa-solid fa-satellite"></i></div>
+            <h3 class="card-title-head">Remote Sensing & GIS</h3>
+            <div class="card-body-content">
+              <p>Satellite spectral bands, DEM terrain extraction, structural photogrammetry, and spatial GIS mapping.</p>
+            </div>
+          </div>
+
+          <div class="discipline-card">
+            <div class="discipline-card__icon"><i class="fa-solid fa-droplet"></i></div>
+            <h3 class="card-title-head">Hydrogeology & Energy</h3>
+            <div class="card-body-content">
+              <p>Aquifer hydraulics, well hydraulics, coal petrology, kerogen kinetics, and petroleum systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- M.Sc. Geology Semester Hub -->
+    <section class="msc-section section" id="msc-section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__badge section__badge--emerald">Postgraduate Modules</span>
+          <h2 class="section__title">M.Sc. Geology Portals</h2>
+          <p class="section__subtitle">Direct access to course notes, syllabus modules, and laboratory practical drives[cite: 1]</p>
+        </div>
+
+        <div class="sem-cards__grid">
+          
+          <!-- Semester 1 Card -->
+          <div class="sem-card course-item" data-title="Semester 1 Structural Geology Mineralogy Petrology Sedimentology GLM 101 106 107 108 109 110 111">
+            <span class="sem-tag">Semester 01 • 20.5 Credits</span>[cite: 1]
+            <h3 class="card-title-head">Core Foundations</h3>
+            <div class="card-body-content">
+              <p>Structural Geology, Mineralogy & Crystallography, Igneous Petrology, Sedimentology, Metamorphic Petrology, and Field Training.[cite: 1]</p>
+              <div class="practical-box">
+                <strong><i class="fa-solid fa-flask"></i> Practicals: GLM 106 - 110</strong>[cite: 1]
+                <p>Map problem sheets, optical thin-section microscopy, CIPW norms, and sieving logs.[cite: 1]</p>
+              </div>
+            </div>
+            <div class="card-actions-row">
+              <a href="msc-sem1.html" class="btn btn--emerald"><i class="fa-solid fa-book-open"></i> Theory Notes</a>
+              <button class="btn btn--practical open-modal-btn"
+                data-title="Semester 1 Practical Repository"
+                data-drive-embed="https://drive.google.com/embeddedfolderview?id=YOUR_SEM1_PRACTICALS_ID#grid"
+                data-drive-direct="https://drive.google.com/drive/folders/YOUR_SEM1_PRACTICALS_ID?usp=sharing">
+                <i class="fa-solid fa-microscope"></i> Practicals
+              </button>
+            </div>
+          </div>
+
+          <!-- Semester 2 Card -->
+          <div class="sem-card course-item" data-title="Semester 2 Geomorphology Geotectonics Geochemistry Stratigraphy Micropaleontology Ore GLM 201 206 207 208 209 210">
+            <span class="sem-tag">Semester 02 • 19.5 Credits</span>[cite: 1]
+            <h3 class="card-title-head">Geochemistry & Stratigraphy</h3>
+            <div class="card-body-content">
+              <p>Geomorphology & Geotectonics, Geochemistry, Indian Stratigraphy, Micropaleontology & Oceanography, Ore Geology.[cite: 1]</p>
+              <div class="practical-box">
+                <strong><i class="fa-solid fa-flask"></i> Practicals: GLM 206 - 210</strong>[cite: 1]
+                <p>Rapid silicate analysis, foraminiferal extraction, and reflected light ore microscopy.[cite: 1]</p>
+              </div>
+            </div>
+            <div class="card-actions-row">
+              <a href="msc-sem2.html" class="btn btn--emerald"><i class="fa-solid fa-book-open"></i> Theory Notes</a>
+              <button class="btn btn--practical open-modal-btn"
+                data-title="Semester 2 Practical Repository"
+                data-drive-embed="https://drive.google.com/embeddedfolderview?id=YOUR_SEM2_PRACTICALS_ID#grid"
+                data-drive-direct="https://drive.google.com/drive/folders/YOUR_SEM2_PRACTICALS_ID?usp=sharing">
+                <i class="fa-solid fa-microscope"></i> Practicals
+              </button>
+            </div>
+          </div>
+
+          <!-- Semester 3 Card -->
+          <div class="sem-card course-item" data-title="Semester 3 Fuel Geology Paleontology Hydrogeology Remote Sensing GIS Mantle Basin Marine GLM 301 305 306 307 308">
+            <span class="sem-tag">Semester 03 • 22.5 Credits</span>[cite: 1]
+            <h3 class="card-title-head">Applied Exploration</h3>
+            <div class="card-body-content">
+              <p>Fuel Geology (Coal & Petroleum), Invertebrate Paleontology, Hydrogeology, Remote Sensing & GIS, Major Electives, Field Training.[cite: 1]</p>
+              <div class="practical-box">
+                <strong><i class="fa-solid fa-flask"></i> Practicals: GLM 305 - 308, 312-314</strong>[cite: 1]
+                <p>Coal polished mounts, stereoscopes, DIP image processing, and hydrographs.[cite: 1]</p>
+              </div>
+            </div>
+            <div class="card-actions-row">
+              <a href="msc-sem3.html" class="btn btn--emerald"><i class="fa-solid fa-book-open"></i> Theory Notes</a>
+              <button class="btn btn--practical open-modal-btn"
+                data-title="Semester 3 Practical Repository"
+                data-drive-embed="https://drive.google.com/embeddedfolderview?id=YOUR_SEM3_PRACTICALS_ID#grid"
+                data-drive-direct="https://drive.google.com/drive/folders/YOUR_SEM3_PRACTICALS_ID?usp=sharing">
+                <i class="fa-solid fa-microscope"></i> Practicals
+              </button>
+            </div>
+          </div>
+
+          <!-- Semester 4 Card -->
+          <div class="sem-card course-item" data-title="Semester 4 Mining Engineering Petroleum Exploration Sequence Stratigraphy Dissertation GLM 401 406 407 408 409 410 418">
+            <span class="sem-tag">Semester 04 • 17.5 Credits</span>[cite: 1]
+            <h3 class="card-title-head">Specialization & Thesis</h3>
+            <div class="card-body-content">
+              <p>Major & Minor Electives (Engineering, Mining, Petroleum Exploration, Instrumentation) and Project Dissertation.[cite: 1]</p>
+              <div class="practical-box">
+                <strong><i class="fa-solid fa-flask"></i> Practicals: GLM 406 - 410 & GLM 418</strong>[cite: 1]
+                <p>Surveying instruments, wireline log analysis, and Master's dissertation thesis data.[cite: 1]</p>
+              </div>
+            </div>
+            <div class="card-actions-row">
+              <a href="msc-sem4.html" class="btn btn--emerald"><i class="fa-solid fa-book-open"></i> Theory Notes</a>
+              <button class="btn btn--practical open-modal-btn"
+                data-title="Semester 4 Practical & Thesis Hub"
+                data-drive-embed="https://drive.google.com/embeddedfolderview?id=YOUR_SEM4_PRACTICALS_ID#grid"
+                data-drive-direct="https://drive.google.com/drive/folders/YOUR_SEM4_PRACTICALS_ID?usp=sharing">
+                <i class="fa-solid fa-microscope"></i> Practicals
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- B.Sc. Placeholder -->
+    <section class="bsc-section section" id="bsc-section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__badge">Undergraduate</span>
+          <h2 class="section__title">B.Sc. Geology Repository</h2>
+          <p class="section__subtitle">Undergraduate semester modules and practical schedules</p>
+        </div>
+
+        <div class="bsc-placeholder-card">
+          <div class="bsc-placeholder__icon">
+            <i class="fa-solid fa-person-digging"></i>
+          </div>
+          <h3>Undergraduate Repository In Curation</h3>
+          <p>
+            B.Sc. curriculum resources, practical slides, and question papers are currently being structured and will be released in the upcoming update.
+          </p>
+          <button class="btn btn--outline" disabled>
+            <i class="fa-solid fa-clock-rotate-left"></i> Coming Soon
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Master Drive Cloud Hub -->
+    <section class="repository section" id="repository">
+      <div class="container">
+        <div class="repo-banner">
+          <div class="repo-banner__info">
+            <span class="section__badge" style="color: #ffffff; border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.15);">Cloud Archive</span>
+            <h2>Master Geological Drive Repository</h2>
+            <p>
+              Direct access to my unified root drive containing high-resolution Geological Time Scale charts, Survey of India Toposheet maps, QGIS shapefiles, and entrance examination papers.
+            </p>
+            <div class="repo-features">
+              <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Standard Toposheet Legend Manual</div>
+              <div class="feature-item"><i class="fa-solid fa-circle-check"></i> GSA Geologic Time Scales</div>
+              <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Thin-Section Microscopic Reference Manuals</div>
+            </div>
+          </div>
+
+          <div class="repo-banner__cta">
+            <a 
+              href="https://drive.google.com/drive/folders/YOUR_MASTER_DRIVE_FOLDER_ID?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn--white">
+              <i class="fa-brands fa-google-drive"></i> Open Root Drive
+            </a>
+            <span class="notice-text">Shared openly for academic study & research purposes.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__badge">Get In Touch</span>
+          <h2 class="section__title">Contact My Desk</h2>
+          <p class="section__subtitle">Need specific geological study notes, practical datasets, or research discussions?</p>
+        </div>
+
+        <div class="contact__wrapper">
+          <!-- Information Column -->
+          <div class="contact__details">
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon"><i class="fa-solid fa-user-graduate"></i></div>
+              <div>
+                <h4>Personal Desk</h4>
+                <p>Aniket Kumar Sinha<br>Your neighborhood friendly geologist</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+              <div>
+                <h4>Direct Email</h4>
+                <p>contact.geochronos@gmail.com<br>Response within 24-48 hours</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon"><i class="fa-solid fa-compass"></i></div>
+              <div>
+                <h4>Research Areas</h4>
+                <p>Remote Sensing & GIS, Petrology, Structural Modeling & Glaciology</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact__form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="e.g. Arthur Holmes" />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required placeholder="name@domain.com" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="program">Program / Academic Level</label>
+              <select id="program" required>
+                <option value="msc">M.Sc. Geology</option>
+                <option value="bsc">B.Sc. Geology</option>
+                <option value="phd">Ph.D. / Research Scholar</option>
+                <option value="other">Geology Enthusiast</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Material Request / Message</label>
+              <textarea id="message" rows="4" required placeholder="Specify the required course code (e.g. GLM-103), practical manual, or query..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Google Drive Modal -->
+  <div class="drive-modal" id="drive-modal">
+    <div class="drive-modal__overlay" id="modal-overlay"></div>
+    <div class="drive-modal__box">
+      <div class="drive-modal__header">
+        <div class="drive-modal__title-group">
+          <i class="fa-brands fa-google-drive modal-icon"></i>
+          <h3 id="modal-title">Drive Explorer</h3>
+        </div>
+        <button class="drive-modal__close" id="modal-close-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="drive-modal__body">
+        <div class="drive-modal__loader" id="modal-loader">
+          <i class="fa-solid fa-circle-notch fa-spin"></i>
+          <p>Connecting to Google Drive Repository...</p>
+        </div>
+        <iframe id="drive-frame" src="" title="Drive Preview"></iframe>
+      </div>
+      <div class="drive-modal__footer">
+        <span style="font-size:0.8rem; color:var(--text-dim);">GeoChronos Cloud Server</span>
+        <a id="modal-direct-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="padding: 0.4rem 1rem; font-size: 0.82rem;">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation -->
+  <nav class="mobile-app-nav">
+    <a href="#home" class="app-nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="#disciplines" class="app-nav-item"><i class="fa-solid fa-compass-drafting"></i><span>Disciplines</span></a>
+    <a href="#msc-section" class="app-nav-item"><i class="fa-solid fa-microscope"></i><span>M.Sc.</span></a>
+    <a href="#repository" class="app-nav-item"><i class="fa-brands fa-google-drive"></i><span>Drive</span></a>
+    <a href="#contact" class="app-nav-item"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+  </nav>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__brand">
+        <i class="fa-solid fa-gem"></i> <span>GeoChronos</span>
+      </div>
+      <p>&copy; 2026 GeoChronos • Your neighborhood friendly geologist. Built for learners & researchers.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
